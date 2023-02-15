@@ -27,3 +27,20 @@ def scrap_pages(total_pages: int) -> list[str]:
             pass
 
     return soups
+
+
+def get_question_title(html_page: str) -> list[str]:
+    titles = []
+
+    for title_container in html_page.find_all("h3", class_="s-post-summary--content-title"):
+        title = title_container.get_text()
+        title = title.strip()
+        titles.append(title)
+
+    return titles
+
+
+def get_absolute_link(relative_link: str) -> str:
+    prefix = 'https;//stackoverflow.com'
+
+    return prefix + relative_link if 'https' not in relative_link else relative_link
