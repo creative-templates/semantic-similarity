@@ -72,3 +72,7 @@ def get_all_pages_questions_title(soups: list[str]) -> list[str]:
 
 
 soups = scrap_pages(30000)
+questions_title = get_all_pages_questions_title(soups)
+df = pd.DataFrame(questions_title, columns=['questions'], index=None)
+df = df.drop_duplicates() if df.duplicated().sum() > 0 else df
+df.to_csv('questions.csv', index=False, sep=',')
