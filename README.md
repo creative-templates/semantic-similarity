@@ -10,3 +10,5 @@
 - [x] Decided on the dataset to use: SNLI (Stanford Natural Language Inference)
 - [x] Added schema for dataset and application
 - [x] Discussed with team about the implementation of BERT
+- [x] Added the scraper for the dataset
+- [x] Added the dataset after scraping
