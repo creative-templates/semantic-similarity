@@ -23,10 +23,9 @@ def scrap_pages(total_pages: int) -> list[str]:
             print(f"Page {count + 1} scrapped")
             count += 1
             time.sleep(1)
-        # TODO: Handle the exception properly, SonarLint is complaining
         except:
             time.sleep(1800)
-            pass
+            raise
 
     return soups
 
