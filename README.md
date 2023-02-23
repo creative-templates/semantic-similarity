@@ -12,3 +12,4 @@
 - [x] Discussed with team about the implementation of BERT
 - [x] Added the scraper for the dataset
 - [x] Added the dataset after scraping
+- [x] Added the code for preprocessing the dataset
