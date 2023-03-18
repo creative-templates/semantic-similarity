@@ -13,3 +13,7 @@
 - [x] Added the scraper for the dataset
 - [x] Added the dataset after scraping
 - [x] Added the code for preprocessing the dataset
+- [x] Added the code for training the model
+- [x] Added the implementation of the model
+- [x] UI for the application using React
+- [x] Backend for the application using Flask

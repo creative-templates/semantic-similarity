@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300&display=swap");
+/* X-Small devices (portrait phones, less than 576px) */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  margin: 0 -16px;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.form-control {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+  border: none;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 8px;
+  border: 1px solid #c0c0c0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-capitalize:first-letter {
+  text-transform: capitalize;
+}
+
+.text-error {
+  color: #e20e0e;
+}
+
+.field-text-area {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.5rem 0 0.5rem 1.75rem;
+}
+
+.list-item svg {
+  position: absolute;
+  left: 0rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    --container-max-width: 540px;
+    max-width: var(--container-max-width);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    --container-max-width: 760px;
+    max-width: var(--container-max-width);
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: calc(800% / 12);
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: calc(400% / 12);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    --container-max-width: 980px;
+    max-width: var(--container-max-width);
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    --container-max-width: 1180px;
+    max-width: var(--container-max-width);
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    --container-max-width: 1380px;
+    max-width: var(--container-max-width);
+  }
+}
